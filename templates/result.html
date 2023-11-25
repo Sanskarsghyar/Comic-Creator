@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Comic Result</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            margin: 0;
+            padding: 20px;
+        }
+        .comic-result {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .row {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .comic-panel {
+            margin-right: 10px;
+        }
+        .comic-panel img {
+            width: 250px; /* Adjust image width */
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: -5px;
+        }
+        .text-container {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="comic-result">
+        <h1>Comic Result</h1>
+        {% for i in range(0, 10, 5) %}
+        <div class="row">
+            {% for image, text in images_texts[i:i+5] %}
+            <div class="comic-panel">
+                <img src="{{ image }}" alt="Comic Panel">
+                <div class="text-container">
+                    <p>{{ text }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>

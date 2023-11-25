@@ -24,7 +24,7 @@ Run the realtime Python window:
 
     streamlit run comic_creator.py
 
-Click this URL http://127.0.0.1:5000/ to open the app
+Click this URL http://localhost:8501/ or http://172.23.68.35:8501/ to open the app
 
 ### 2. Using Flask
     
@@ -34,7 +34,7 @@ Run the realtime Python window:
 
 Click this URL http://127.0.0.1:5000/ to open the app
 
-### Give 10 inputs as text and click on "Generate Comics"
+## Give 10 inputs as text and click on "Generate Comics"
 
 
 ## Contributing

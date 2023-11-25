@@ -34,7 +34,7 @@ Run the realtime Python window:
 
 Click this URL http://127.0.0.1:5000/ to open the app
 
-## Give 10 inputs as text and click on "Generate Comics"
+## Give 10 inputs as text and click on "Generate Comics, then wait for some time for image generation"
 
 
 ## Contributing
